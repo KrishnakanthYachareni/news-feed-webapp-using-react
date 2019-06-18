@@ -10,8 +10,10 @@ class News extends Component {
   }
 
   componentDidMount() {
-    const url =
-      "https://newsapi.org/v2/top-headlines?apiKey=c56caeaa95b84e528efec9c5f71513b7&country=in&category=business";
+    const url = `https://newsapi.org/v2/${this.props.news.type}?${
+      this.props.news.query
+    }&apiKey=c56caeaa95b84e528efec9c5f71513b7`;
+
     fetch(url)
       .then(response => {
         return response.json();
@@ -31,11 +33,7 @@ class News extends Component {
   }
 
   render() {
-    return (
-      <div className="row">
-        <ul>{this.renderItems()}</ul>
-      </div>
-    );
+    return <div className="row">{this.renderItems()}</div>;
   }
 }
 
