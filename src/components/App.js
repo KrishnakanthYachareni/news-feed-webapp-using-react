@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {
       news1: {
         type: "top-headlines",
-        query: "country=in&category=business"
+        query: "country=in&category=general"
       },
       news2: {
         type: "everything",
