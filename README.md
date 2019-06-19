@@ -1,3 +1,8 @@
+Reference Course:
+1. https://www.linkedin.com/learning/react-working-with-apis
+Use Axios for HTTP Requests
+1. https://github.com/axios/axios
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

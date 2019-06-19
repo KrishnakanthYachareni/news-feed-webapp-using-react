@@ -1,5 +1,6 @@
 import React from 'react';
 
+// State Less Component
 const NewSingle = ({item}) => (
   <div className="col s3">
     <div className="card">
